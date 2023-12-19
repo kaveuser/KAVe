@@ -12,6 +12,7 @@ To execute KAVe, open a terminal inside the folder where the code is located and
 
 To examine a folder:
 > python3 main.py /folder1
+
 To examine a file:
 > python3 main.py /folder1/file1.php
 
@@ -19,8 +20,10 @@ There is the option to only look for a specific type of vulnerability either xss
 
 To search for both:
 > python3 main.py /folder1/file1.php
+
 To search for only sqli:
 > python3 main.py /folder1/file1.php sqli
+
 To search for only xss:
 > python3 main.py /folder1/file1.php xss
 
