@@ -28,4 +28,6 @@ To search for only xss:
 > python3 main.py /folder1/file1.php xss <br>
 
 ### Dependencies
-- Python3
+- python3
+- matplotlib
+- networkx
