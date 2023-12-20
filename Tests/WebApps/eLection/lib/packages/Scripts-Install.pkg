@@ -1,0 +1,84 @@
+CREATE TABLE `tb_guru` (
+  `no_induk` varchar(18) NOT NULL,
+  `nama` text NOT NULL,
+  `jabatan` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_hakpilih` (
+  `no_induk` varchar(18) NOT NULL,
+  `id_panitia` int(5) NOT NULL,
+  `tgl` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `kode_akses` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_kandidat` (
+`id` int(5) NOT NULL,
+  `nama` text NOT NULL,
+  `kelas` varchar(20) NOT NULL,
+  `bio` text NOT NULL,
+  `fbid` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_level` (
+`id` int(3) NOT NULL,
+  `level` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_panitia` (
+`id` int(5) NOT NULL,
+  `no_induk` varchar(18) NOT NULL,
+  `nama` text NOT NULL,
+  `level` int(3) NOT NULL,
+  `password` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_pengaturan` (
+  `id` int(1) NOT NULL,
+  `judul` varchar(100) NOT NULL,
+  `subjudul` varchar(200) NOT NULL,
+  `instansi` varchar(100) NOT NULL,
+  `enable_poll` tinyint(1) NOT NULL,
+  `disabled_text` text NOT NULL,
+  `timezone` varchar(100) NOT NULL,
+  `default_language` varchar(10) NOT NULL,
+  `v_major` int(3) NOT NULL,
+  `v_minor` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_polling` (
+`id` int(8) NOT NULL,
+  `no_induk` varchar(18) NOT NULL,
+  `id_panitia` int(5) NOT NULL,
+  `tgl` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `id_kandidat` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_siswa` (
+  `no_induk` varchar(10) NOT NULL,
+  `nama` text NOT NULL,
+  `kelas` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `tb_guru` ADD PRIMARY KEY (`no_induk`), ADD UNIQUE KEY `no_induk` (`no_induk`);
+ALTER TABLE `tb_hakpilih` ADD PRIMARY KEY (`no_induk`), ADD UNIQUE KEY `kode_akses` (`kode_akses`);
+ALTER TABLE `tb_kandidat` ADD PRIMARY KEY (`id`);
+ALTER TABLE `tb_level` ADD PRIMARY KEY (`id`);
+ALTER TABLE `tb_panitia` ADD PRIMARY KEY (`id`), ADD UNIQUE KEY `no_induk` (`no_induk`);
+ALTER TABLE `tb_pengaturan` ADD PRIMARY KEY (`id`);
+ALTER TABLE `tb_polling` ADD PRIMARY KEY (`id`);
+ALTER TABLE `tb_siswa` ADD PRIMARY KEY (`no_induk`), ADD UNIQUE KEY `no_induk` (`no_induk`);
+ALTER TABLE `tb_kandidat` MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tb_level` MODIFY `id` int(3) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tb_panitia` MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `tb_polling` MODIFY `id` int(8) NOT NULL AUTO_INCREMENT;
+
+INSERT INTO `tb_level` (`id`, `level`) VALUES
+(1, 'Administrator'),
+(2, 'Registrator'),
+(3, 'Inspector');
+
+INSERT INTO `tb_panitia` (`id`, `no_induk`, `nama`, `level`, `password`) VALUES
+(1, '1234', 'Admin', 1, '81dc9bdb52d04dc20036dbd8313ed055');
+
+INSERT INTO `tb_pengaturan` (`id`, `judul`, `subjudul`, `instansi`, `enable_poll`, `disabled_text`, `timezone`, `default_language`, `v_major`, `v_minor`) VALUES
+(1, 'eLection', 'Web Based Election System', 'Tripath Projects', 1, 'Election is closed.', 'default', "en-us", 2, 0);

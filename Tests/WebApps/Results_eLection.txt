@@ -1,0 +1,76 @@
+Tests/WebApps/eLection/index.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/eLection/lib/classes/Installer.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/eLection/lib/images/nice-background.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/eLection/lib/processor.php
+Number of vulnerabilities: 48
+1 : (('entry_point', '$connection', 339, ('xss_sink', ('$connection',), 339, '')), ('entry_point', '$connection', 339, ('xss_sink', ('$connection',), 339, '')))
+2 : (('entry_point', '$host', 91, '_main'), ('xss_sink', ('$localize', '$connect'), 97, ''))
+3 : (('entry_point', '$user', 92, '_main'), ('xss_sink', ('$localize', '$connect'), 97, ''))
+4 : (('entry_point', '$password', 93, '_main'), ('xss_sink', ('$localize', '$connect'), 97, ''))
+5 : (('entry_point', '$connect', 112, '_main'), ('sqli_sink', ('$connect',), 115, ''))
+6 : (('entry_point', '$ct', 132, '_main'), ('sqli_sink', ('$ct',), 133, ''))
+7 : (('entry_point', '$ct', 132, '_main'), ('sqli_sink', ('$ct',), 144, ''))
+8 : (('entry_point', '$ct', 132, '_main'), ('sqli_sink', ('$ct',), 234, ''))
+9 : (('entry_point', '$ct', 132, '_main'), ('sqli_sink', ('$ct',), 251, ''))
+10 : (('entry_point', '$ct', 132, '_main'), ('sqli_sink', ('$ct', '$format_query'), 257, ''))
+11 : (('entry_point', '$ct', 132, '_main'), ('sqli_sink', ('$ct', '$format_query'), 262, ''))
+12 : (('entry_point', '$ct', 132, '_main'), ('sqli_sink', ('$ct', '$qry'), 311, ''))
+13 : (('entry_point', '$dbName', 168, '_main'), ('sqli_sink', ('$connect', '$dbName'), 170, ''))
+14 : (('entry_point', '$dbName', 168, '_main'), ('xss_sink', ('$localize', '$dbName'), 173, ''))
+15 : (('entry_point', '$dbName', 168, '_main'), ('sqli_sink', ('$connect', '$dbName'), 175, ''))
+16 : (('entry_point', '$connect', 169, '_main'), ('sqli_sink', ('$connect', '$dbName'), 170, ''))
+17 : (('entry_point', '$connect', 169, '_main'), ('sqli_sink', ('$connect', '$dbName'), 175, ''))
+18 : (('entry_point', '$connect', 169, '_main'), ('xss_sink', ('$localize', '$connect'), 181, ''))
+19 : (('entry_point', '$dbName', 192, '_main'), ('sqli_sink', ('$connect', '$dbName'), 194, ''))
+20 : (('entry_point', '$dbName', 192, '_main'), ('sqli_sink', ('$connect', '$dbName'), 196, ''))
+21 : (('entry_point', '$dbName', 192, '_main'), ('xss_sink', ('$localize', '$dbName'), 206, ''))
+22 : (('entry_point', '$connect', 193, '_main'), ('sqli_sink', ('$connect', '$dbName'), 194, ''))
+23 : (('entry_point', '$connect', 193, '_main'), ('sqli_sink', ('$connect', '$dbName'), 196, ''))
+24 : (('entry_point', '$connect', 193, '_main'), ('xss_sink', ('$localize', '$connect'), 202, ''))
+25 : (('entry_point', '$dbName', 216, '_main'), ('sqli_sink', ('$connect', '$dbName'), 218, ''))
+26 : (('entry_point', '$dbName', 216, '_main'), ('sqli_sink', ('$ct',), 234, ''))
+27 : (('entry_point', '$dbName', 216, '_main'), ('sqli_sink', ('$ct',), 251, ''))
+28 : (('entry_point', '$dbName', 216, '_main'), ('sqli_sink', ('$ct', '$format_query'), 257, ''))
+29 : (('entry_point', '$dbName', 216, '_main'), ('sqli_sink', ('$ct', '$format_query'), 262, ''))
+30 : (('entry_point', '$dbName', 216, '_main'), ('sqli_sink', ('$ct', '$qry'), 311, ''))
+31 : (('entry_point', '$connect', 217, '_main'), ('sqli_sink', ('$connect', '$dbName'), 218, ''))
+32 : (('entry_point', '$ct', 233, '_main'), ('sqli_sink', ('$ct',), 234, ''))
+33 : (('entry_point', '$ct', 233, '_main'), ('sqli_sink', ('$ct',), 251, ''))
+34 : (('entry_point', '$ct', 233, '_main'), ('sqli_sink', ('$ct', '$format_query'), 257, ''))
+35 : (('entry_point', '$ct', 233, '_main'), ('sqli_sink', ('$ct', '$format_query'), 262, ''))
+36 : (('entry_point', '$ct', 233, '_main'), ('sqli_sink', ('$ct', '$qry'), 311, ''))
+37 : (('entry_point', '$ct', 309, '_main'), ('sqli_sink', ('$ct', '$qry'), 311, ''))
+38 : (('entry_point', '$ct', 320, '_main'), ('sqli_sink', ('$ct', '$qry'), 322, ''))
+39 : (('entry_point', '$connection', 339, '_main'), ('xss_sink', ('$target', '$connection'), 342, ''))
+40 : (('entry_point', '$myId', 356, '_main'), ('sqli_sink', ('$ct', '$myId', '$myName', '$myPass'), 388, ''))
+41 : (('entry_point', '$myPass', 357, '_main'), ('sqli_sink', ('$ct', '$myId', '$myName', '$myPass'), 388, ''))
+42 : (('entry_point', '$myName', 358, '_main'), ('sqli_sink', ('$ct', '$myId', '$myName', '$myPass'), 388, ''))
+43 : (('entry_point', '$ct', 387, '_main'), ('xss_sink', ('$output',), 468, ''))
+44 : (('entry_point', '$ct', 387, '_main'), ('sqli_sink', ('$ct', '$myId', '$myName', '$myPass'), 388, ''))
+45 : (('entry_point', '$ct', 387, '_main'), ('xss_sink', ('$localize', '$ct'), 397, ''))
+46 : (('entry_point', '$myTimezone', 408, '_main'), ('sqli_sink', ('$ct', '$myTimezone'), 416, ''))
+47 : (('entry_point', '$ct', 415, '_main'), ('sqli_sink', ('$ct', '$myTimezone'), 416, ''))
+48 : (('entry_point', '$ct', 415, '_main'), ('xss_sink', ('$localize', '$ct'), 425, ''))
+
+
+Total vulnerabilities found:
+XSS: 12
+SQLi: 36
+
+Graph stats:
+N grafos: 67
+N funcoes: 3
+N variaveis: 58
+N nós: 443
+N edges: 883
+
+Elapsed time: 12.64 seconds

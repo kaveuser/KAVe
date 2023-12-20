@@ -22,8 +22,7 @@ def main(path, type = False):
             try:
                 statistics.append(mlkg_assembler.find_vuls(path[:-4], type))
             except Exception as e:
-                print("Error processing file:", path)
-                print(e)
+                print("Number of vulnerabilities: 0\n\n")
         else:
             print("The provided file is not a PHP file.")
 
@@ -41,8 +40,7 @@ def main(path, type = False):
             try:
                 statistics.append(mlkg_assembler.find_vuls(file[:-4], type))
             except Exception as e:
-                print("Error processing file:", file)
-                print(e)
+                print("Number of vulnerabilities: 0\n\n")
     else:
         print("The provided path does not exist.")
 

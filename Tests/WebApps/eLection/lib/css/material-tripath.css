@@ -1,0 +1,242 @@
+select::-ms-expand {	display: none; }
+select{
+    -webkit-appearance: none;
+		-moz-appearance: none;
+    appearance: none;
+}
+body.blur {
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  transition: all .5s ease-in-out;
+}
+  #subtitle_2 i.material-icons {
+    float: left;
+    font-size: 3.5em;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .spacer {
+    height: 30px !important;
+    clear: both;
+  }
+  .web_title_1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 50px;
+    font-size: 2.8em;
+  }
+  .web_title_2 {
+    margin-bottom: 0;
+  }
+  .web_title_3 {
+    margin-top: 0;
+    font-size: 1em;
+  }
+  #login-card .form, #subtitle_2 {
+    display: none;
+  }
+  .opacity-0 {
+    opacity: 0;
+  }
+  .opacity-50 {
+    opacity: .5;
+  }
+  .footer.login {
+    margin-top: -35px;
+  }
+.nice-background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -999;
+}
+.text-faded {
+  color: #555;
+}
+  #welcome-text {
+    margin-bottom: 50px;
+  }
+#box-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background: rgba(0,0,0,.2);
+  display: none;
+}
+.dropdown-menu.up { bottom:100% !important; top:auto !important; }
+.left {
+  text-align: left !important;
+}
+.right {
+  text-align: right !important;
+}
+.center {
+  text-align: center !important;
+}
+.pointer {
+	cursor: pointer;
+}
+.cursor-help {
+  cursor: help;
+}
+.display-none {
+	display: none;
+}
+.display-block {
+  display: block !important;
+}
+.pull-fix {
+  margin-top: 20px;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.margin-top-20 {
+	margin-top: 20px !important;
+}
+.margin-left-10 {
+	margin-left: 10px;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.style-cetak-struk {
+  margin-top: 10px;
+}
+#cetakstruk {
+  display: none;
+}
+.instalasi {
+  display: none;
+}
+.ovhidden {
+  overflow: hidden;
+}
+  .install-status {
+    margin: 20px 0;
+    padding-left: 20px;
+  }
+  .install-status li.nav-item {
+    padding-left: 20px;
+    position: relative;
+    transition: all .5s ease-in-out;
+  }
+  .install-status li.nav-item.process {
+    font-weight: bold;
+  }
+  .install-status li.nav-item i.material-icons {
+    opacity: 0;
+    position: absolute;
+    left: -8px;
+    font-size: 20px;
+    transition: all .5s ease-in-out;
+  }
+  .install-status li.nav-item.done i.material-icons {
+    opacity: 1;
+  }
+
+/* Material Animation */
+.loader {
+  height: 4px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #ddd;
+}
+  .loader.mb-10 {
+    margin-bottom: 10px;
+  }
+.loader:before{
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 4px;
+  background-color: #66bb6a;
+  animation: loading 1.5s linear infinite;
+}
+
+@keyframes loading {
+    from {left: -200px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
+
+@media (max-width: 480px),
+(max-width: 767px) {
+    .form-group .form-control {
+        width: 100%;
+        height: auto;
+    }
+}
+.sidebar .nav li.separator {
+	margin: 10px 10%;
+	background-color: rgba(180,180,180,.3);
+	height: 1px;
+	width: 80%;
+}
+.card-profile .card-avatar {
+	width: 130px;
+	height: 130px;
+	background: #e6e6e6;
+}
+.togglebutton label {
+	color: #aaa;
+}
+.togglebutton.green label input[type="checkbox"]:checked+.toggle {
+	background-color: #4caf50;
+}
+.togglebutton.green label input[type=checkbox]:checked+.toggle:after {
+    border-color: #4caf50;
+}
+
+.togglebutton.green label input[type=checkbox]:checked+.toggle:active:after {
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px #4caf50;
+}
+.modal-footer .togglebutton {
+	margin-top: 8px;
+}
+.sidebar-wrapper .nav li a small {
+	display: block;
+	font-size: 80%;
+	opacity: .7;
+}
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus,
+.dropdown-menu li a:active {
+    background-color: #4caf50;
+    color: #FFFFFF;
+}
+.dropdown-menu li a:hover span,
+.dropdown-menu li a:focus span,
+.dropdown-menu li a:active span {
+    color: #FFFFFF;
+}
+#btn_add {
+	margin-top: 5px;
+}
+
+.main-panel.width-full {
+  width: 100%;
+}
+  .dropdown-menu > li > a {
+    color: #333 !important;
+    cursor: pointer;
+  }
+  .dropdown-menu > li > a:hover {
+    color: #FFF !important;
+  }

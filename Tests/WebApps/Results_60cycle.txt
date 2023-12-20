@@ -1,0 +1,225 @@
+Tests/WebApps/60cycle/common/config.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/common/lib.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/common/sqlConnect.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/index.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/Builder/ConfigSchema.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/Builder/Xml.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/Exception.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/Interchange.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/Interchange/Directive.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/Interchange/Id.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/InterchangeBuilder.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/Validator.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/ConfigSchema/ValidatorAtom.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Filter/ExtractStyleBlocks.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Filter/YouTube.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Language/classes/en-x-test.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Language/messages/en-x-test.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Language/messages/en-x-testmini.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Language/messages/en.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Lexer/PEARSax3.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Printer.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Printer/CSSDefinition.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Printer/ConfigForm.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/htmlpurifier-4.0.0/standalone/HTMLPurifier/Printer/HTMLDefinition.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/lib/recaptchalib.php
+Error processing file: Tests/WebApps/60cycle/lib/recaptchalib.php
+can only concatenate tuple (not "str") to tuple
+Tests/WebApps/60cycle/news.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/post.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/printEntries.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/changeUserPass.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/delete.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/deleteEntry.php
+Number of vulnerabilities: 1
+1 : (('entry_point', '$unluckyEntry', 1, '_main'), ('sqli_sink', ('$query',), 4, ''))
+
+
+Tests/WebApps/60cycle/private/edit.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/editEntry.php
+Number of vulnerabilities: 9
+1 : (('entry_point', '$entryForEdit', 7, '_main'), ('xss_sink', (), 10, ('sqli_sink', ('$query',), 10, '')))
+2 : (('entry_point', '$entryForEdit', 7, '_main'), ('xss_sink', ('$title',), 36, ''))
+3 : (('entry_point', '$entryForEdit', 7, '_main'), ('xss_sink', ('$body',), 37, ''))
+4 : (('entry_point', '$entryForEdit', 7, '_main'), ('xss_sink', (), 40, ''))
+5 : (('entry_point', '$entryForEdit', 7, '_main'), ('xss_sink', (), 41, ''))
+6 : (('entry_point', '$title', 20, '_main'), ('xss_sink', ('$title',), 36, ''))
+7 : (('entry_point', '$body', 21, '_main'), ('xss_sink', ('$body',), 37, ''))
+8 : (('entry_point', '$time', 22, '_main'), ('xss_sink', (), 40, ''))
+9 : (('entry_point', '$timezone', 23, '_main'), ('xss_sink', (), 41, ''))
+
+
+Tests/WebApps/60cycle/private/index.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/install.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/installLib.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/menuOptions.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/preview.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/previewEntry.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/publish.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/publishEntry.php
+Number of vulnerabilities: 3
+1 : (('entry_point', '$_SESSION', 31, ('xss_sink', (), 31, '')), ('entry_point', '$_SESSION', 31, ('xss_sink', (), 31, '')))
+2 : (('entry_point', '$_SESSION', 33, ('xss_sink', (), 33, '')), ('entry_point', '$_SESSION', 33, ('xss_sink', (), 33, '')))
+3 : (('entry_point', '$_SESSION', 39, ('xss_sink', (), 39, '')), ('entry_point', '$_SESSION', 39, ('xss_sink', (), 39, '')))
+
+
+Tests/WebApps/60cycle/private/runInstall.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/select.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/selectEntry.php
+Error processing file: Tests/WebApps/60cycle/private/selectEntry.php
+can only concatenate tuple (not "str") to tuple
+Tests/WebApps/60cycle/private/submit.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/private/submitEntry.php
+Number of vulnerabilities: 4
+1 : (('entry_point', '$title', 1, '_main'), ('sqli_sink', ('$query',), 15, ''))
+2 : (('entry_point', '$body', 2, '_main'), ('sqli_sink', ('$query',), 15, ''))
+3 : (('entry_point', '$timezone', 4, '_main'), ('sqli_sink', ('$query',), 15, ''))
+4 : (('entry_point', '$origTitle', 8, '_main'), ('sqli_sink', ('$query',), 15, ''))
+
+
+Tests/WebApps/60cycle/private/userpass.php
+Number of vulnerabilities: 0
+
+
+Tests/WebApps/60cycle/submitComment.php
+Number of vulnerabilities: 6
+1 : (('entry_point', '$name', 16, '_main'), ('xss_sink', (), 28, ''))
+2 : (('entry_point', '$email', 17, '_main'), ('xss_sink', (), 28, ''))
+3 : (('entry_point', '$comment', 18, '_main'), ('xss_sink', (), 28, ''))
+4 : (('entry_point', '$name', 23, '_main'), ('xss_sink', (), 28, ''))
+5 : (('entry_point', '$email', 24, '_main'), ('xss_sink', (), 28, ''))
+6 : (('entry_point', '$comment', 25, '_main'), ('xss_sink', (), 28, ''))
+
+
+Total vulnerabilities found:
+XSS: 18
+SQLi: 5
+
+Graph stats:
+N grafos: 490
+N funcoes: 49
+N variaveis: 346
+N nós: 1752
+N edges: 8232
+
+Elapsed time: 11.31 seconds

@@ -150,12 +150,12 @@ def find_vuls(path, type = False):
     i = 1
     for vul in vulnerabilities:
         if vul[0]:
-            print(i, ":", vul[1:])
+            print(i, ":", vul[1:3])
             if "xss" in vul[2][0]:
                 count_xss+=1
             if "sqli" in vul[2][0]:
                 count_sqli+=1
-        i+=1
+            i+=1
 
     print("\n")
 

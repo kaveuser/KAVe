@@ -1,0 +1,38 @@
+/* 
+ * This stylesheet contains all the classes references by 60cycleCMS,
+ * and is included by default.  Change the classes as you see fit.
+ */
+
+/*
+ * This paragraph style is used to right-justify the "Newest", "Oldest", etc.
+ * links.
+ */
+.textright {
+  text-align:right;
+}
+
+/*
+ * Used to style the "Newest", "Oldest" etc. links
+ */
+.navLink {
+}
+
+/*
+ * Used to add special formatting to the title of an entry
+ * when viewing it individually with post.php
+ */
+.lonelyPost {
+}
+
+/*
+ * Use this class to style the titles of entries
+ */
+.titleLink {
+}
+
+/*
+ * Used to hide a comment field to thwart spammers.
+ */
+.h {
+  display: none;
+}

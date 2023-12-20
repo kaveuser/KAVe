@@ -1,0 +1,13 @@
+<?php
+	error_reporting(0);
+	session_start();
+	$db_host = "%s";
+	$db_user = "%s";
+	$db_pass = "%s";
+	$db_name = "%s";
+	$connection = mysqli_connect($db_host,$db_user,$db_pass,$db_name);
+	if(!$connection){
+		echo "FATAL ERROR!";
+		exit();
+	}
+?>

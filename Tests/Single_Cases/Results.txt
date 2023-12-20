@@ -1,0 +1,83 @@
+Test_Cases/Single_Cases/Code_SQLi/Case01.php
+Number of vulnerabilities: 4
+1 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', ('$tainted',), 7, ''), ['_main'], ['_main'])
+2 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', (), 10, ''), ['_main'], ['_main'])
+3 : (('entry_point', '$tainted', 1, '_main'), ('sqli_sink', ('$query',), 11, ''), ['_main'], ['_main'])
+4 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', ('$data',), 13, ''), ['_main'], ['_main'])
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case02.php
+Number of vulnerabilities: 3
+1 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', (), 7, ''), ['_main'], ['_main'])
+2 : (('entry_point', '$tainted', 1, '_main'), ('sqli_sink', ('$query',), 8, ''), ['_main'], ['_main'])
+3 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', ('$data',), 10, ''), ['_main'], ['_main'])
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case03.php
+Number of vulnerabilities: 0
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case04.php
+Number of vulnerabilities: 3
+1 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', (), 12, ''), ['_main'], ['_main'])
+2 : (('entry_point', '$tainted', 1, '_main'), ('sqli_sink', ('$query',), 13, ''), ['_main'], ['_main'])
+3 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', ('$data',), 15, ''), ['_main'], ['_main'])
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case05.php
+Number of vulnerabilities: 3
+1 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', (), 5, ''), ['_main'], ['_main'])
+2 : (('entry_point', '$tainted', 1, '_main'), ('sqli_sink', ('$query',), 6, ''), ['_main'], ['_main'])
+3 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', ('$data',), 8, ''), ['_main'], ['_main'])
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case06.php
+Number of vulnerabilities: 0
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case07.php
+Number of vulnerabilities: 3
+1 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', (), 12, ''), ['_main'], ['_main'])
+2 : (('entry_point', '$tainted', 1, '_main'), ('sqli_sink', ('$query',), 13, ''), ['_main'], ['_main'])
+3 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', ('$data',), 15, ''), ['_main'], ['_main'])
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case08.php
+Number of vulnerabilities: 3
+1 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', (), 5, ''), ['_main'], ['_main'])
+2 : (('entry_point', '$tainted', 1, '_main'), ('sqli_sink', ('$query',), 6, ''), ['_main'], ['_main'])
+3 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', ('$data',), 8, ''), ['_main'], ['_main'])
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case09.php
+Number of vulnerabilities: 0
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case10.php
+Number of vulnerabilities: 0
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case11.php
+Number of vulnerabilities: 4
+1 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', ('$tainted',), 2, ''), ['_main'], ['_main'])
+2 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', (), 5, ''), ['_main'], ['_main'])
+3 : (('entry_point', '$tainted', 1, '_main'), ('sqli_sink', ('$query',), 6, ''), ['_main'], ['_main'])
+4 : (('entry_point', '$tainted', 1, '_main'), ('xss_sink', ('$data',), 8, ''), ['_main'], ['_main'])
+
+
+Test_Cases/Single_Cases/Code_SQLi/Case12.php
+Number of vulnerabilities: 0
+
+
+Total vulnerabilities found:
+XSS: 16
+SQLi: 7
+
+Graph stats:
+N grafos: 114
+N funcoes: 12
+N variaveis: 78
+N nós: 216
+N edges: 283
+
+Elapsed time: 0.69 seconds

@@ -1,0 +1,10 @@
+<?php
+session_start();
+?>
+<html>
+<body>
+<?php
+include('submitEntry.php');
+?>
+</body>
+</html>

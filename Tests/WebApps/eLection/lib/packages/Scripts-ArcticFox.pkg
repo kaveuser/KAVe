@@ -1,0 +1,12 @@
+ALTER TABLE `tb_siswa` CHANGE `no_induk` `no_induk` VARCHAR(15) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `tb_guru` CHANGE `no_induk` `no_induk` VARCHAR(30) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `tb_hakpilih` CHANGE `no_induk` `no_induk` VARCHAR(30) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `tb_polling` CHANGE `no_induk` `no_induk` VARCHAR(30) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;
+ALTER TABLE `tb_kandidat` CHANGE `fbid` `fbid` VARCHAR(15) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL;
+ALTER TABLE `tb_pengaturan` ADD `multivote` INT(2) NOT NULL AFTER `instansi`;
+ALTER TABLE `tb_pengaturan` ADD `election_timeout` VARCHAR(10) NOT NULL AFTER `enable_poll`;
+ALTER TABLE `tb_pengaturan` ADD `logging` TINYINT(1) NOT NULL AFTER `default_language`;
+ALTER TABLE `tb_pengaturan` ADD `themes` VARCHAR(100) NOT NULL AFTER `instansi`;
+ALTER TABLE `tb_pengaturan` ADD `nullvote` TINYINT(1) NOT NULL  AFTER `multivote`;
+
+UPDATE `tb_pengaturan` SET `multivote` = 1, `election_timeout` = '5 minutes', `logging` = 1, `themes` = 'shards', `nullvote` = 0, `v_major` = 2, `v_minor` = 0 WHERE `id` = 1;

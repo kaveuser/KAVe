@@ -1,0 +1,73 @@
+60cycleCMS README
+Author: David van Geest
+------------------------------------------------------------------------
+
+Thanks for choosing 60cycleCMS!  This document should help you get 
+started.
+
+ABOUT:
+60cycleCMS is a simple Content Management System for use on a personal
+website.  It was originally written to serve the needs of 60cycle.net,
+David van Geest's website.  60cycleCMS uses PHP and MySQL, and is
+licensed under the New BSD License (see COPYRIGHT).
+
+INSTALLATION:
+
+PRE-REQUISITIES:
+- an Apache (or other server that supports .htaccess and .htpasswd files)
+  webserver with PHP installed
+- a MySQL server (you will need the username, password, and server address)
+
+OPTIONAL:
+- a RECAPTCHA account (private and public key)
+
+STEPS:
+1.	Copy the archive to the directory you would like to see your
+	blog/news, and unzip (in linux use "unzip 60cycleCMS.2.1.0.zip).
+2.	Go to the new private/ directory in your browser.
+3.	Click the Install link, follow the directions.
+
+NOTE:  Many users will likely get this message:
+
+**** WARNING: Could not move config.php to one level above website root.  Please do this MANUALLY *****
+
+This is normal (it means that PHP doesn't have write access outside of 
+your web directory... which is good).  You will have to move the file yourself.
+
+You could also get the following message:
+
+**** Could not create config.php file! You will have to do this MANUALLY. See common/config.php for a template. ****
+
+This means PHP does not have write access to your website root.
+
+To resolve, copy the example common/config.php to one level above
+web root and fill in your information manually.
+	
+4.	Modify display pages as you wish.  Note that index.php and post.php
+	are just bare-bones HTML with two blocks of PHP.  You can copy-paste
+	those blocks into an existing website or template.  In the private/
+	folder, you can do similar copy-paste with all of the one-word files,
+	e.g. index.php, submit.php, edit.php.
+	
+	Unless you know what you're doing, don't modify news.php,
+	printEntries.php, or any of the two-word files in private/.
+  
+  Update styles as needed in style/style.css.  This file contains all
+  the CSS styles used by 60cycleCMS.
+  
+5.	You're done.
+
+COMMON ISSUES:
+
+The .htaccess and .htpasswd files were created during the install process,
+but I still can access private/ without a username or password!
+
+Possible Causes:
+- Restart your browser... the info may be cached
+- If you're using Apache, you need to have the AllowOverride AuthConfig
+  directive in effect
+- Your webserver doesn't support .htaccess and .htpasswd (try Apache)
+
+Other problems?  I may or may not be able to help, but I'll probably try.  
+Email me at: david <at> 60cycle <dot> net
+	
